@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | CraftNest</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="index.html" class="logo">Craft<span>Nest.</span></a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html" class="active">Shop</a>
+            <a href="custom-order.html">Custom Orders</a>
+        </nav>
+
+        <a href="cart.html" class="cart-link">Cart 🛍</a>
+    </header>
+
+    <!-- Shop Heading -->
+    <section class="shop-heading">
+        <p class="tagline">OUR HANDMADE COLLECTION</p>
+        <h1>Explore Our <span>Creations.</span></h1>
+        <p>Beautiful things, thoughtfully handmade just for you.</p>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="shop-section">
+
+        <div class="shop-toolbar">
+            <input type="text" id="searchInput"
+                   placeholder="Search handmade products...">
+
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="crochet">Crochet</option>
+                <option value="clay">Clay</option>
+                <option value="resin">Resin Art</option>
+                <option value="gifts">Handmade Gifts</option>
+            </select>
+        </div>
+
+        <div class="product-container" id="productContainer">
+            <!-- Products will appear here using JavaScript -->
+        </div>
+
+        <p id="noProducts" class="no-products" style="display:none;">
+            No products found.
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="index.html" class="logo">Craft<span>Nest.</span></a>
+        <p>Where Creativity Finds a Home.</p>
+        <p class="copyright">© 2026 CraftNest. All rights reserved.</p>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/shop.js"></script>
+
+</body>
+</html>
